@@ -1,0 +1,204 @@
+body {
+    position: absolute;
+    background-color: paleturquoise
+}
+
+.top-container {
+    background-color: black;
+    padding: 145px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-container {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container-top {
+    background-color: black;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+
+.locations {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.locations li {
+    margin: 10px 0;
+    font-family: "Helvetica", Courier, monospace;
+    color: white;
+    font-size: 20px;
+}
+
+.left-container-top:hover .image {
+    transform: translate(-180%, -50%);
+}
+
+.left-container-top:hover .locations {
+    opacity: 1;
+}
+
+.left-container-bottom {
+    background-color: black;
+    padding: 75px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.left-container-bottom:hover {
+    background-color: paleturquoise;
+    transition: background-color 1s ease;
+}
+
+.left-container-bottom:hover button {
+    background-color: paleturquoise;
+    transition: background-color 1s ease;
+}
+
+.left-container-bottom:hover img {
+    background-color: paleturquoise;
+    transition: background-color 1s ease;
+}
+
+.left-container-bottom button, img {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border: none;
+}
+
+#linkedin:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+#github:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+#gmail:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+#instagram:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.right-container {
+    background-color: black;
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-container:hover {
+    background-color: paleturquoise;
+    transition: background-color 1s ease;
+}
+
+.right-container:hover #intro {
+    color: black;
+}
+
+.bottom-container {
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-container:hover {
+    background-color: paleturquoise;
+    transition: background-color 1s ease;
+}
+
+.bottom-container:hover #projects {
+    color: black;
+}
+
+#projects {
+    font-family: "Helvetica", Courier, monospace;
+    color: white;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    outline: none;
+}
+
+#projects:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+    font-family: "Helvetica", Courier, monospace;
+}
+
+main {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px paleturquoise;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-weight: bolder;
+    font-size: 12rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Helvetica", Courier, monospace;
+    text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896;
+    cursor: pointer;
+}
+
+main:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+}
+
+#intro {
+    font-family: "Helvetica", Courier, monospace;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+}
